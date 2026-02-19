@@ -1,0 +1,43 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bubble {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-bar {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border: none;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.input-bar:focus {
+    outline: none;
+    border: 1px solid #6200ee;
+}
